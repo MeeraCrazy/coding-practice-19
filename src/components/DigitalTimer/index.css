@@ -1,0 +1,241 @@
+/* Write your CSS here */
+.app-contiainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #cffcf1,
+    #cffcf1,
+    #defafe
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .app-contiainer {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #defafe
+    );
+  }
+}
+
+.heading {
+  color: #0f172a;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+
+.digital-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .digital-timer-container {
+    flex-direction: row;
+    max-width: 1140px;
+  }
+}
+
+.timer-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 320px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 576px) {
+  .timer-display-container {
+    width: 450px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timer-display-container {
+    width: 600px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .timer-display-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.elapsed-time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .elapsed-time-container {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .elapsed-time-container {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.elapsed-time {
+  color: #00d9f5;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .elapsed-time {
+    font-size: 48px;
+  }
+}
+
+.timer-state {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-state {
+    font-size: 24px;
+  }
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.timer-controller-container {
+  display: flex;
+  align-items: center;
+}
+
+.time-controler-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+.time-controler-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 8pxss;
+}
+
+@media screen and (min-width: 768px) {
+  .time-controler-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+}
+
+.timer-controler-label {
+  color: #1e293b;
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-controler-label {
+    font-size: 32px;
+  }
+}
+
+.timer-limit-controller-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.limit-label {
+  color: #1e293b;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.time-limit-controller {
+  display: flex;
+  align-items: center;
+}
+
+.limit-controller-btn {
+  color: #1e293b;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 500;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.limit-label-value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+}
+
+.limit-value {
+  text-align: center;
+  color: #1e293b;
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  width: 100px;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
